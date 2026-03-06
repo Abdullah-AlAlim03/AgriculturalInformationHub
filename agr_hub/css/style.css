@@ -1,0 +1,282 @@
+body{
+    background-color: rgb(244, 255, 228);
+    font-family: sans-serif;
+}
+
+/* top section  */
+.top{
+    width: 100%;
+    margin: -8px 0;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.top.scrolled{
+    height: 70px;
+    padding-top: 5px;
+    background: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(10px); 
+    /* -webkit-backdrop-filter: blur(10px); Safari support */
+    transition: 0.3s;
+}
+.container{
+    width: 75%;
+    height: 75px;
+    margin: 0 auto;    
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    height: 40px;
+    
+}
+.logo>img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+/* navbar  */
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+.l-item{
+    font-size: 12px;
+    
+}
+.l-item>a:hover{
+    text-decoration: underline;
+    color: green;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* search  */
+.search{
+    padding-right: 20px;
+}
+.search-f>input{
+    border: 0.5px green solid;
+    border-radius: 20px;
+    padding: 7px;
+    margin-right: 10px;
+    color: rgb(92, 92, 92);
+    
+}
+input::placeholder{
+    font-size: 12px;
+    padding: 5px 7px;
+    color: gray;
+    font-family: monospace;
+    
+}
+input:not(:placeholder-shown){
+    color: black;
+    background-color: rgb(255, 255, 219);
+}
+.s-btn{
+    background-color: #fff;
+    border: 1px green solid;
+    border-radius: 20px;
+    font-size: 13px;
+    color: green;
+    padding: 7px 15px;
+}
+.s-btn:hover{
+    background-color: green;
+    color: #fff;
+    border: none;
+}
+
+/* hero section  */
+.hero{
+    
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url('../image/herobg.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 840px;
+    margin: 0 auto;
+}
+
+.hero-t{
+    text-align: center;
+    font-size: 5rem;
+    -webkit-text-stroke: 1px greenyellow;
+    -webkit-text-fill-color: transparent;
+    padding-top: 200px;
+}
+.hero-p{
+    text-align: center;
+    color: rgb(190, 255, 190);
+    font-family: cursive;
+    font-size: 25px;
+    padding-top: 10px;
+}
+.h-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.cta{
+    padding: 7px 10px;
+    border: 1px greenyellow solid;
+    border-radius: 20px;
+    color: greenyellow;
+    font-size: 15px;
+
+}
+.cta:hover{
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    transition: 0.3s;
+}
+
+/* about section  */
+.about{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.ab-img{
+    width: 420px;
+    height: 420px;
+    padding: 50px 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+/* about content  */
+.ab-content{
+    width: 60%;
+    padding-top: 50px;
+}
+.ab-stitle{
+    color: rgb(46, 46, 46);
+    padding-bottom: 15px;
+}
+.sp-abt{
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(46, 184, 0);
+}
+.ab-title{
+    color: rgb(0, 23, 0);
+    padding-bottom: 10px;
+}
+.ab-p{
+    color: gray;
+    font-size: 13px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+/* featured section  */
+.sec-area{
+    width: 70%;
+    margin: 0 auto;
+}
+.sec-t{
+    padding: 50px 0;
+}
+.sec-title{
+    text-align: center;
+    color: rgb(0, 29, 0);
+}
+.sec-p{
+    padding: 10px 0;
+    text-align: center;
+    color: green;
+}
+/* farming guide section  */
+.guide{
+    background-color: #eff6ec;
+    height: 800px;
+}
+.farm-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: auto;
+}
+/* farm card design  */
+.farm-card{
+    flex-basis: 32%;
+    border: 1px solid rgb(89, 142, 89);
+    border-radius: 20px;
+    background-color: rgb(234, 255, 236);
+    position: relative;
+}
+.f-card-img{
+    width: 96%;
+    height: 300px;
+    padding: 8px;
+
+}
+.f-card-img>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.f-card-title{
+    padding: 5px 10px;
+    margin: 0;
+    color: rgb(15, 87, 15);
+    font-size: 25px;
+    font-weight: 550;
+}
+.f-card-p{
+    font-size: 13px;
+    padding: 0 10px;
+    text-align: justify;
+}
+.f-btn{
+    
+    border: 1px solid rgb(28, 76, 28);
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(28, 76, 28);
+    padding: 10px 20px;
+    font-size: 13px;
+    margin: 0 0 10px 150px;
+    
+}
+.f-btn:hover{
+    background-color: rgb(28, 76, 28);
+    color: white;
+}
+.explore{
+    display: flex;
+    align-items: center;
+}
+.e-btn{
+    margin: 30px auto;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: rgb(28, 76, 28);
+    color: white;
+    font-size: 13px;
+}
+.e-btn:hover{
+    background-color: rgb(22, 22, 22);
+    color: rgb(255, 255, 255);
+}

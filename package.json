@@ -1,0 +1,23 @@
+{
+  "name": "agricultural_info",
+  "version": "1.0.0",
+  "description": "This is a server system thats maintain a Agricultural Information Hub website.",
+  "keywords": [
+    "agriculture",
+    "agri",
+    "hub",
+    "info",
+    "information"
+  ],
+  "license": "ISC",
+  "author": "Abdullah Al Alim",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
